@@ -1,1 +1,1 @@
-web: gunicorn supporter_signup.wsgi --log-file -
+web: supporter_signup/application.py
