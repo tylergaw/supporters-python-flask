@@ -1,1 +1,1 @@
-web: make run
+web: python supporter_signup/application.py
