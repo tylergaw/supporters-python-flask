@@ -1,1 +1,1 @@
-from supporter_signup.application import app
+from supporter_signup.application import app as application
