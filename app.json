@@ -1,7 +1,7 @@
 {
   "name": "Supporters: Python/Flask",
   "description": "An example of signing up new Supporters using The Groundwork API through a Flask application.",
-  "repository": "https://github.com/tylergaw/supporter-signup",
+  "repository": "https://github.com/tylergaw/supporters-python-flask",
   "website": "http://thegroundwork.com",
   "logo": "https://developer.dev.thegroundwork.com/assets/thegroundwork-heroku-btn.png",
   "env": {
