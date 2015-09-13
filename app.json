@@ -1,6 +1,6 @@
 {
-  "name": "Supporter Sign Up: Flask Example",
-  "description": "A simple example of creating new Supporters using Flask and the GW API",
+  "name": "New Supporters: Python/Flask",
+  "description": "A simple example of signing up new Supporters using Flask and the GW API",
   "repository": "https://github.com/tylergaw/supporter-signup",
   "website": "http://thegroundwork.com",
   "env": {
