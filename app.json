@@ -9,10 +9,10 @@
       "value": "dev"
     },
     "GW_API_URL": {
-      "description": "Your GW API url"
+      "description": "Your GW API url. (ex: https://api.dev.thegroundwork.com/)"
     },
     "GW_CLIENT_ID": {
-      "description": "Your GW API client id"
+      "description": "Your GW API client id."
     }
   }
 }
