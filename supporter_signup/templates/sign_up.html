@@ -1,23 +1,49 @@
 {% extends "base.html" %}
 
+{% block page_title %}
+  Stay up to date: Sign up
+{% endblock %}
+
 {% block body %}
-  <form id="supporter-form" action="." method="post" class="container">
-    <fieldset>
-      <legend>Sign Up</legend>
+  <div class="container container--sign-up">
+    <form id="supporter-form" action="." method="post">
+      <fieldset>
+        <header>
+          <h3 class="typography--extra-bold">Get informed,<br>stay up to date.</h3>
+          <p>
+            Sign up for email updates to get the latest news and updates on our
+            progress on global concerns.
+          </p>
+        </header>
 
-      {% if error %}
-      <p>There was a problem, please try again.</p>
-      {% endif %}
+        <div class="form-fields">
+          {% if error %}
+          <div class="form-error">
+            We’re having trouble signing you up.
+            <br>Please try again.
+          </div>
+          {% endif %}
 
-      <div>
-        <label for="email">
-          Email:
-        </label>
-        <input type="email" name="email" id="email" required>
-      </div>
+          <div class="field">
+            <label for="givenName">
+              May we have your name?
+            </label>
+            <input type="text" name="givenName" id="givenName" required>
+          </div>
 
-      <input type="hidden" name="source" id="source" value="example-flask-supporter-signup">
-      <button class="btn" type="submit" name="sign-up">Sign up</button>
-    </fieldset>
-  </form>
+          <div class="field">
+            <label for="email">
+              and email address?
+            </label>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+
+        <input type="hidden" name="source" id="source" value="example-flask-supporter-signup">
+        <div class="form-controls">
+          <button class="btn-sign-up typography--extra-bold" type="submit" name="sign-up">Sign up</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 {% endblock %}}

@@ -1,77 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <title>Sign Up</title>
+    <title>{% block page_title %}{% endblock %}</title>
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        background-color: #fff;
-        font-family: arial, helvetica, sans-serif;
-        margin: 0;
-        padding; 0;
-      }
-
-      .content {
-        margin: 0 auto;
-        max-width: 400px;
-        width: 90%;
-      }
-
-      .container {
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-          rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
-        margin: 3em 0;
-        padding: 24px;
-      }
-
-      .container--success {
-        background-color: #3b4e60;
-        color: #fff;
-        text-align: center;
-      }
-
-      .container--success a {
-        color: #fff;
-      }
-
-      fieldset {
-        border: 0;
-      }
-
-      legend {
-        font-size: 24px;
-        font-weight: bold
-      }
-
-      div {
-        padding: 12px 0;
-      }
-
-      label {
-        display: block;
-      }
-
-      input {
-        box-sizing: border-box;
-        padding: 6px;
-        width: 100%;
-      }
-
-      .btn {
-        background-color: #3b4e60;
-        border: 0;
-        border-radius: 2px;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        padding: 8px;
-        width: 100%;
-      }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Biryani:300,400,800" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
   </head>
   <body>
     <div class="content">
