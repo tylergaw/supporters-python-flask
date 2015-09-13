@@ -52,7 +52,7 @@ In the repo is [.env.example](https://github.com/tylergaw/supporters-python-flas
 ```
 vim ~/.virtualenvs/supporters-flask/bin/postactivate
 
-export ENV=dev
+export ENV=local
 export GW_API_URL=https://api.url.com/ #trailing slash here please
 export GW_CLIENT_ID=<client_id>
 ```
