@@ -1,0 +1,18 @@
+{
+  "name": "Supporter Sign Up: Flask Example",
+  "description": "A simple example of creating new Supporters using Flask and the GW API",
+  "repository": "https://github.com/tylergaw/supporter-signup",
+  "website": "http://thegroundwork.com",
+  "env": {
+    "ENV": {
+      "description": "The environment your app will be run in. One of; local, dev, prod, test",
+      "value": "dev"
+    },
+    "GW_API_URL": {
+      "description": "Your GW API url"
+    },
+    "GW_CLIENT_ID": {
+      "description": "Your GW API client id"
+    }
+  }
+}
