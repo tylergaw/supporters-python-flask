@@ -19,8 +19,12 @@
         <div class="form-fields">
           {% if error %}
           <div class="form-error">
-            We’re having trouble signing you up.
-            <br>Please try again.
+            {% if errorMsg %}
+              {{errorMsg}}
+            {% else %}
+              We’re having trouble signing you up.
+              <br>Please try again.
+            {% endif %}
           </div>
           {% endif %}
 

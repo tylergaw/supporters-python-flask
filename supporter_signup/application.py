@@ -41,21 +41,32 @@ def success():
 @app.route('/', methods=['GET', 'POST'])
 def index():
     error = False
+    errorMsg = False
     supporter = Supporter()
 
     if request.method == 'POST':
         payload = {
+            'givenName': request.form['givenName'],
             'email': request.form['email'],
             'source': request.form['source']
         }
-        req = supporter.create(payload)
 
-        if req.status_code == 201:
-            return redirect(url_for('success', email=payload['email']))
-        else:
+        if not payload['givenName'] or not payload['email']:
             error = True
+            errorMsg = 'We need both your name and email to sign you up.'
+        else:
+            req = supporter.create(payload)
 
-    return render_template('sign_up.html', error=error)
+            if req.status_code == 201:
+                return redirect(url_for('success', email=payload['email']))
+            else:
+                error = True
+
+    return render_template(
+        'sign_up.html',
+        errorMsg=errorMsg,
+        error=error
+    )
 
 if __name__ == '__main__':
     app.run()
