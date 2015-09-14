@@ -48,7 +48,10 @@ def index():
         payload = {
             'givenName': request.form['givenName'],
             'email': request.form['email'],
-            'source': request.form['source']
+            'source': request.form['source'],
+            'tags': {
+                'email_template': 'signup_supporters_example'
+            }
         }
 
         if not payload['givenName'] or not payload['email']:
